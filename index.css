@@ -1,0 +1,97 @@
+.y-checkbox_theme_normal {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.y-checkbox_theme_normal:hover {
+  cursor: pointer;
+}
+.y-checkbox_theme_normal {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.2);
+}
+.y-checkbox_theme_normal:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  border-radius: 2px;
+  background: #fff;
+}
+.y-checkbox_theme_normal:after {
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  content: '';
+  background-image: url("tip.svg");
+  background-size: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.05s ease-out, opacity 0.05s ease-out, visibility 0s linear 0.05s;
+}
+.y-checkbox_theme_normal.y-checkbox_size_m {
+  font-size: 13px;
+}
+.y-checkbox_theme_normal.y-checkbox_size_m {
+  line-height: 14px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.y-checkbox_theme_normal.y-checkbox_size_m:after {
+  width: 15px;
+  height: 15px;
+  transform: translateY(-5px);
+}
+.y-checkbox_theme_normal.y-checkbox_size_l {
+  font-size: 15px;
+}
+.y-checkbox_theme_normal.y-checkbox_size_l {
+  line-height: 17px;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+}
+.y-checkbox_theme_normal.y-checkbox_size_l:after {
+  width: 18px;
+  height: 18px;
+  transform: translateY(-7px);
+}
+.y-checkbox_theme_normal.y-checkbox_checked {
+  background: rgba(153,122,0,0.5);
+}
+.y-checkbox_theme_normal.y-checkbox_checked:before {
+  background: #ffeba0;
+}
+.y-checkbox_theme_normal.y-checkbox_checked:after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0s;
+}
+.y-checkbox_theme_normal.y-checkbox_focused {
+  box-shadow: 0 0 0 1px #fc0, inset 0 0 0 1px #fc0;
+}
+.y-checkbox_theme_normal.y-checkbox_hovered {
+  background: rgba(0,0,0,0.3);
+}
+.y-checkbox_theme_normal.y-checkbox_hovered.y-checkbox_checked {
+  background: rgba(129,103,0,0.6);
+}
+.y-checkbox_theme_normal.y-checkbox_disabled {
+  cursor: default;
+  color: #999;
+}
+.y-checkbox_theme_normal.y-checkbox_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.y-checkbox_theme_normal.y-checkbox_disabled:before {
+  display: none;
+}
+.y-checkbox_theme_normal.y-checkbox_disabled.y-checkbox_checked:after {
+  opacity: 0.4;
+}

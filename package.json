@@ -1,0 +1,44 @@
+{
+  "name": "y-checkbox",
+  "version": "0.0.0",
+  "description": "y-component checkbox",
+  "scripts": {
+    "serve": "http-server -p 8080 -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/y-components/y-checkbox.git"
+  },
+  "keywords": [
+    "react",
+    "jspm",
+    "y-component"
+  ],
+  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y-components/y-checkbox/issues"
+  },
+  "files": [
+    "index.css",
+    "index.jsx",
+    "tip.svg"
+  ],
+  "homepage": "https://github.com/y-components/y-checkbox",
+  "jspm": {
+    "main": "index.jsx!",
+    "directories": {
+      "lib": ".",
+      "packages": "jspm_packages"
+    },
+    "dependencies": {
+      "b_": "npm:b_@^1.3.0",
+      "css": "github:systemjs/plugin-css@^0.1.6",
+      "jsx": "github:floatdrop/plugin-jsx@^0.1.1",
+      "react": "npm:react@^0.12.2"
+    }
+  },
+  "devDependencies": {
+    "http-server": "^0.7.5"
+  }
+}
