@@ -4,6 +4,8 @@ var b = require('b_').with('y-checkbox');
 var Style = require('./index.css!');
 
 var YCheckbox = {
+	displayName: 'y-checkbox',
+
 	__onFocus: function() {
 		this.setState({focused: true});
 	},
