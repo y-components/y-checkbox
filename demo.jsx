@@ -5,7 +5,7 @@ var React = require('react');
 var YCheckbox = require('./index.jsx!');
 
 React.render((
-    <div>
+    <div style={{padding: '10px'}}>
         <YCheckbox/> Normal
         <br/><br/>
         <YCheckbox size="l"/> Size l
