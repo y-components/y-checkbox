@@ -11,7 +11,5 @@ React.render((
         <YCheckbox size="l"/> Size l
         <br/><br/>
         <YCheckbox disabled/> Disabled
-        <br/><br/>
-        <YCheckbox type="line"/> Type line
     </div>
 ), document.getElementById('content'));
