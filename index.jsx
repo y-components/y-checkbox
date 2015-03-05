@@ -4,6 +4,14 @@ var b = require('b_').with('y-checkbox');
 var Style = require('./index.css!');
 
 var YCheckbox = {
+	__onFocus: function() {
+		this.setState({focused: true});
+	},
+
+	__onBlur: function() {
+		this.setState({focused: false});
+	},
+
 	__onMouseEnter: function() {
         this.setState({hovered: true});
     },
@@ -16,7 +24,8 @@ var YCheckbox = {
 		return {
 			checked: this.props.checked,
 			disabled: this.props.disabled,
-			hovered: false
+			hovered: false,
+			focused: this.props.focused
 		};
 	},
 
@@ -31,7 +40,8 @@ var YCheckbox = {
 			size: this.props.size || 'm',
 			checked: this.state.checked,
 			disabled: this.state.disabled,
-			hovered: this.state.hovered
+			hovered: this.state.hovered,
+			focused: this.state.focused
 		});
 
 		return (

@@ -11,5 +11,7 @@ React.render((
         <YCheckbox size="l"/> Size l
         <br/><br/>
         <YCheckbox disabled/> Disabled
+        <br/><br/>
+        <YCheckbox focused/> Focused
     </div>
 ), document.getElementById('content'));
