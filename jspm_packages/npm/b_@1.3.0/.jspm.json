@@ -1,0 +1,73 @@
+{
+  "name": "b_",
+  "version": "1.3.0",
+  "author": {
+    "name": "Mikhail Davydov",
+    "email": "i@azproduction.ru"
+  },
+  "description": "BEM class name generator",
+  "contributors": [
+    {
+      "name": "Mikhail Davydov",
+      "email": "i@azproduction.ru"
+    }
+  ],
+  "keywords": [
+    "bem",
+    "naming",
+    "className",
+    "class",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/azproduction/b_.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "jshint": "2.1.3",
+    "mocha": "~1.11.0",
+    "jscs": "~1.4.5",
+    "istanbul": "~0.2.11",
+    "chai": "*",
+    "husky": "~0.5.1"
+  },
+  "scripts": {
+    "test": "jshint . && jscs . && mocha -R spec",
+    "coverage": "istanbul cover node_modules/.bin/_mocha --report html -- -R spec",
+    "precommit": "npm test",
+    "prepush": "npm test"
+  },
+  "gitHead": "6fc5cddbebe64630193d0e89e77400c14c506bc2",
+  "bugs": {
+    "url": "https://github.com/azproduction/b_/issues"
+  },
+  "homepage": "https://github.com/azproduction/b_",
+  "_id": "b_@1.3.0",
+  "_shasum": "7f2dc1fd69bc9b56b04d18bdf53654d9b911fdd2",
+  "_from": ".",
+  "_npmVersion": "1.4.14",
+  "_npmUser": {
+    "name": "azproduction",
+    "email": "azazel.private@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "azproduction",
+      "email": "azazel.private@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "7f2dc1fd69bc9b56b04d18bdf53654d9b911fdd2",
+    "tarball": "http://registry.npmjs.org/b_/-/b_-1.3.0.tgz"
+  },
+  "jspm": {},
+  "registry": "npm",
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "dependencies": {}
+}
