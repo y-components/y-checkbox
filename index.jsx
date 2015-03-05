@@ -52,7 +52,15 @@ var YCheckbox = {
 				onClick={this.toggle}
 				onMouseEnter={this.__onMouseEnter}
                 onMouseLeave={this.__onMouseLeave}
-				/>
+				>
+				<input className={b('control')}
+					type="checkbox"
+					ref="checkboxInput"
+					onFocus={this.__onFocus}
+					onBlur={this.__onBlur}
+					checked={this.state.checked}
+					disabled={this.state.disabled}/>
+			</div>
 		);
 	}
 };
