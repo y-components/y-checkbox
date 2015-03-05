@@ -1,6 +1,4 @@
-# y-tabs
-
-:warning: __Under development__
+# y-checkbox
 
 ## Development
 
